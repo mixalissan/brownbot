@@ -1,6 +1,7 @@
 import discord
 import requests
 import random
+import os
 from keep_alive import keep_alive
 
 client = discord.Client()
@@ -116,4 +117,4 @@ async def on_message(message):
 #sunarthsh pou krataei server anoixto
 keep_alive()
 #to key tou bot mas, dont share it tha mas xakaroun to server
-client.run('OTAxMjg5MTYzNzQyMTQyNDc0.YXNs8Q.hY565vu1u81UrKoYP7oAmhqCEVE')
+client.run(os.getenv('TOKEN'))
